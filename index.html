@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harish Krishnakumar - Personal Website</title>
+    <style>
+        :root {
+            --main-bg: #f0f0f0;
+            --dark-text: #333333;
+            --light-text: #666666;
+            --accent-blue: #3a5f9e;
+            --subtle-blue: rgba(58, 95, 158, 0.1);
+            --section-bg: #ffffff;
+            --nav-bg: #e0e0e0;
+        }
+        body {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            color: var(--dark-text);
+            background-color: var(--main-bg);
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        header {
+            text-align: center;
+            margin-bottom: 1em;
+            padding: 10px 0;
+            border-bottom: 1px solid var(--subtle-blue);
+        }
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 0.1em;
+            color: var(--dark-text);
+        }
+        nav {
+            background-color: var(--nav-bg);
+            padding: 10px 0;
+            margin-bottom: 1em;
+            text-align: center;
+            border-radius: 5px;
+        }
+        nav a {
+            display: inline-block;
+            padding: 8px 16px;
+            margin: 0 10px;
+            text-decoration: none;
+            color: var(--dark-text);
+            font-weight: bold;
+            transition: all 0.3s ease;
+            border-radius: 3px;
+        }
+        nav a:hover {
+            background-color: var(--accent-blue);
+            color: white;
+        }
+        h2 {
+            font-size: 1.6em;
+            margin-top: 0;
+            margin-bottom: 0.5em;
+            padding-bottom: 0.2em;
+            color: var(--dark-text);
+            border-bottom: 1px solid var(--subtle-blue);
+        }
+        .content-wrapper {
+            display: flex;
+            background-color: var(--section-bg);
+            border-radius: 5px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+            overflow: hidden;
+        }
+        .main-content {
+            flex: 1;
+            padding: 20px;
+            min-width: 300px;
+        }
+        .photo-container {
+            width: 250px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+            background-color: #f9f9f9;
+        }
+        .photo-container img {
+            max-width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        footer {
+            text-align: center;
+            margin-top: 1em;
+            padding: 0.5em 0;
+            border-top: 1px solid var(--subtle-blue);
+            font-size: 0.9em;
+            color: var(--light-text);
+        }
+        a {
+            color: var(--accent-blue);
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .full-width {
+            width: 100%;
+            margin-top: 20px;
+        }
+        .full-width section {
+            background-color: var(--section-bg);
+            border-radius: 5px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Harish Krishnakumar</h1>
+            <p>hkrishnakumar [at] princeton.edu</p>
+        </header>
+
+        <nav>
+            <a href="astrophotography.html">Astrophotography</a>
+        </nav>
+
+        <div class="content-wrapper">
+            <div class="main-content">
+                <h2>About Me</h2>
+                <p>Hello! I'm Harish, a sophomore at Princeton University majoring in <b>Electrical and Computer Engineering</b>, specifically concentrating in Quantum Information and Applied Physics.</p>
+                <p>Lately, I've been working on my <b>astrophysics research</b>, using machine learning and statistics to learn more about the universe. You can also find me working on fun <b>programming projects</b> in my free time. Here's a cool one where I synced LED lights to Spotify songs, and allowed users to input a phrase to control the theme of the lights (<a href="https://github.com/harishk30/SmartLEDControl">Github</a>).</p>
+                <p>Outside of work, you can find me taking pictures under the stars. I'm an award-winning <b><a href="https://www.instagram.com/hk.astro/">astrophotographer</a></b> (you can also check out my photos in the gallery above), and have been featured by NASA, the SETI Institute, and major telescope companies. I also am an avid <b>singer</b>, and particularly enjoy R&B. And, on a weekday morning, you're likely to find me in the gym.</p>
+                <p>Here's my <b><a href="https://drive.google.com/file/d/1FtR-max-Ki_--pzeh1HGB5JdX1leBoCt/view">resume</a></b> if you want to learn more!</p>
+
+            </div>
+            <div class="photo-container">
+                <img src="websitephoto.jpeg" alt="Harish">
+            </div>
+        </div>
+
+        <div class="full-width">
+            <section id="research">
+                <h2>Research</h2>
+                <p>The research I've worked on includes:</p>
+                <ul>
+                    <li>Studying dwarf satellite galaxies in xSAGA data, and analyzing how host environment affects their formation. I'm working on this with Dr. John Wu from the Space Telescope Science Institute. (<a href="https://github.com/harishk30/DwarfGalaxyAnalysis">Github</a>)</li>
+                    <li>Applying Graph Neural Networks (GNNs) to astrophysical problems. I'm working on this with Dr. Francisco Villaescusa-Navarro at the Center for Computational Astrophysics. (<a href="https://github.com/harishk30/GNNcom">Github</a>)</li>
+                    <li>I discovered 1151 previously unclassified ring galaxies with a machine model I created, working with Dr. Bryce Kalmbach from the DiRAC Institute. This work is under review by the Astrophysical Journal, has won awards at Regeneron ISEF & STS, and has been presented at the AAS conference. (<a href="https://github.com/harishk30/RingGalaxiesCNNAnalysis">Github</a> | <a href="https://arxiv.org/abs/2210.11428">Research Paper</a>)</li>
+                </ul>
+            </section>
+
+            <section id="contact">
+                <h2>Contact</h2>
+                <p>Email: hkrishnakumar [at] princeton.edu</p>
+                <p>Github: <a href="https://github.com/harishk30">https://github.com/harishk30</a></p>
+                <p>Linkedin: <a href="https://www.linkedin.com/in/harish-krishnakumar-aa240b196/">https://www.linkedin.com/in/harish-krishnakumar-aa240b196/</a></p>
+            </section>
+        </div>
+
+        <footer>
+            <p>&copy; 2024 Harish Krishnakumar.</p>
+        </footer>
+    </div>
+</body>
+</html>
